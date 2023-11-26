@@ -24,7 +24,7 @@ configuration {
   display-drun:   "";
   display-filebrowser: "";
   display-keys: "";
-  display-run:    "r";
+  display-run:    "";
   display-ssh:    " ";
   display-window: "";
   /* display-windowcd: ; */
