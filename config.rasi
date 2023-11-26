@@ -1,0 +1,208 @@
+configuration {
+/* 
+  The following modi are known:
+    * +window
+    * windowcd
+    * +run
+    * +ssh
+    * drun
+    * combi
+    * keys
+ */
+
+  terminal: "kitty";
+
+  modi: "drun,window,filebrowser";
+  combi-modi: "window,drun";
+
+  drun-display-format: "{icon} {name}";
+  font: "Hack 14";
+
+  show-icons: true;
+
+  display-combi:  "";
+  display-drun:   "";
+  display-filebrowser: "";
+  display-keys: "";
+  display-run:    "r";
+  display-ssh:    " ";
+  display-window: "";
+  /* display-windowcd: ; */
+
+/* Possible Icons (FontAwesome 4.xx) 
+{{{
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+  
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+}}}
+ */
+
+  kb-accept-entry: "Return,KP_Enter";
+  kb-mode-complete: "Control+y";
+  kb-mode-next: "Control+l,Shift+Right,Control+Tab";
+  kb-mode-previous: "Control+h,Shift+Left,Control+ISO_Left_Tab";
+  kb-remove-char-back: "BackSpace";
+  kb-remove-to-eol: "Control+i";
+  kb-remove-to-sol: "Control+u";
+  kb-remove-word-back: "Shift+BackSpace";
+  kb-row-down: "Control+j,Down,Control+n";
+  kb-row-left: "Control+Page_Up";
+  kb-row-right: "Control+Page_Down";
+  kb-row-up: "Control+k,Up,Control+p,ISO_Left_Tab";
+
+  hover-select: true;
+  auto-select: false;
+
+  sidebar-mode: true;
+
+  /* drun-show-actions:true; */
+  /* drun-url-launcher: "xdg-open"; */
+
+  timeout {
+    action: "kb-cancel";
+    delay:  0;
+  }
+  filebrowser {
+    directories-first: true;
+    sorting-method:    "name";
+  }
+
+
+}
+
+@theme "/dev/null"
+
+* {
+
+/*
+#361C0E
+#570211
+#7E3110
+#004540
+#032C4D
+#360825
+ */
+
+/* 
+#020412
+#510513
+#6a040f
+ */
+
+  main-background:  #02041275;
+  border-colour:    #020412;
+  highlight-colour: #510513;
+  text-normal:      #CCCCCC;
+  text-bold:        #FFFFFF;
+  prompt-icon:      #6a040f;
+  prompt-border:    #6a040f45;
+
+
+  background-color: transparent;
+  text-color:       @text-normal;
+
+  margin:  0px;
+  border:  0px;
+  padding: 0px;
+  spacing: 0px;
+
+}
+
+window {
+  background-color: @main-background;
+  border-color:     @border-colour;
+  width:            550px;
+  border:           5px;
+}
+
+inputbar {
+  padding:    14px;
+  spacing:    12px;
+  children:   [ prompt, entry ];
+  border-color: @prompt-border;
+  border: 4px;
+}
+
+prompt, entry, element-text, element-icon {
+  vertical-align: 0.5;
+}
+
+prompt {
+  text-color: @prompt-icon;
+  enabled: true;
+}
+
+listview {
+  lines:      9;
+  columns:    1;
+}
+
+element {
+  padding:    8px;
+  spacing:    8px;
+}
+
+element selected {
+  text-color: @text-bold;
+  background-color: @highlight-colour;
+}
+
+element-icon {
+  size:   20;
+}
+
+element-text {
+  text-color: inherit;
+}
