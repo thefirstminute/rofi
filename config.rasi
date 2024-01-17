@@ -102,8 +102,10 @@ configuration {
   kb-row-right: "Control+Page_Down";
   kb-row-up: "Control+k,Up,Control+p,ISO_Left_Tab";
 
-  hover-select: true;
   auto-select: false;
+
+  /* mouse-follows-focus: false; */
+  hover-select: false;
 
   sidebar-mode: true;
 
@@ -141,7 +143,7 @@ configuration {
 #6a040f
  */
 
-  main-background:  #02041275;
+  main-background:  #02041288;
   border-colour:    #020412;
   highlight-colour: #510513;
   text-normal:      #CCCCCC;
@@ -206,3 +208,5 @@ element-icon {
 element-text {
   text-color: inherit;
 }
+
+/* vim:ft=css */
