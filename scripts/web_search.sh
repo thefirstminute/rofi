@@ -20,32 +20,29 @@
 declare -A URLS
 
 URLS=(
-  ["search:archive"]="https://archive.org/search?query="
   ["psearch:duckduckgo"]="https://www.duckduckgo.com/?q="
+  ["psearch:startpage"]="https://www.startpage.com/do/search?query="
   ["psearch:qwant"]="https://www.qwant.com/?q="
   ["search:google"]="https://www.google.com/search?q="
   ["search:bing"]="https://www.bing.com/search?q="
   ["search:yahoo"]="https://search.yahoo.com/search?p="
   ["search:yandex"]="https://yandex.ru/yandsearch?text="
-  ["search:wolframalpha"]="https://www.wolframalpha.com/input?i="
-
-
+  ["search:perplexity"]="https://www.perplexity.ai/search?q="
 
   ["code:github"]="https://github.com/search?q="
   ["code:manpages"]="https://manpages.org/"
-
   ["code:stackoverflow"]="http://stackoverflow.com/search?q="
   ["code:searchcode"]="https://searchcode.com/?q="
   ["code:openhub"]="https://www.openhub.net/p?ref=homepage&query="
   ["code:superuser"]="http://superuser.com/search?q="
   ["code:askubuntu"]="http://askubuntu.com/search?q="
   ["code:softwareengineering"]="https://softwareengineering.stackexchange.com/search?q="
+  ["code:cheatography"]="https://cheatography.com/explore/search/?q="
 
   ["image:yandex"]="https://yandex.ru/yandsearch?text="
   ["image:coolors"]="https://coolors.co/palettes/trending/"
   ["image:pixabay"]="https://pixabay.com/photos/search/"
   ["image:emoticon"]="https://emoticoncentral.com/search/"
-
 
   ["video:youtube"]="https://www.youtube.com/results?search_query="
   ["video:videezy"]="https://www.videezy.com/free-video/"
@@ -61,14 +58,17 @@ URLS=(
   ["video:imdb"]="http://www.imdb.com/find?ref_=nv_sr_fn&q="
   ["video:rottentomatoes"]="https://www.rottentomatoes.com/search/?search="
 
-  ["google.maps"]="https://www.google.com/maps?q="
-  ["vimawesome"]="http://vimawesome.com/?q="
-  ["alternativeto"]="https://alternativeto.net/browse/search?q="
-  ["piratebay"]="https://thepiratebay.org/search/"
-  ["symbolhound"]="http://symbolhound.com/?q="
-  ["goodreads"]="https://www.goodreads.com/search?q="
-  ["wikipedia"]="https://www.wikipedia.org/w/index.php?title=Special:Search&search="
-  ["reddit"]="https://www.reddit.com/search/?q="
+  ["misc:google.maps"]="https://www.google.com/maps?q="
+  ["misc:vimawesome"]="http://vimawesome.com/?q="
+  ["misc:alternativeto"]="https://alternativeto.net/browse/search?q="
+  ["misc:piratebay"]="https://thepiratebay.org/search/"
+  ["misc:symbolhound"]="http://symbolhound.com/?q="
+  ["misc:goodreads"]="https://www.goodreads.com/search?q="
+
+  ["misc:wikipedia"]="https://www.wikipedia.org/w/index.php?title=Special:Search&search="
+  ["misc:reddit"]="https://www.reddit.com/search/?q="
+  ["misc:wolframalpha"]="https://www.wolframalpha.com/input?i="
+  ["misc:archive"]="https://archive.org/search?query="
 
 )
 
